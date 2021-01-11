@@ -9,14 +9,14 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class SpringBootDroolsHelloWorldApp {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootDroolsHelloWorldApp.class, args);
+  public static void main(String[] args) {
+    SpringApplication.run(SpringBootDroolsHelloWorldApp.class, args);
 
-	}
+  }
 
-	@Bean
-	public KieContainer kieContainer() {
-		return KieServices.Factory.get().getKieClasspathContainer();
-	}
+  @Bean
+  public KieContainer kieContainer() {
+    return KieServices.Factory.get().getKieClasspathContainer();
+  }
 
 }
